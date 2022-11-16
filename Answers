@@ -1,0 +1,16 @@
+Q1) docker run --rm -t -v /var/www/localhost/htdocs --name Fahad-190127 sebp/lighttpd
+
+Q2) docker run --rm -t -v Fahad-190127:/var/www/localhost/htdocs --name Fahad-190127 sebp/lighttpd
+
+Q3) cd Fahad-190127
+    touch index.html
+    nano index.html
+    cat index.html
+    
+Q4) docker run --rm -t -v ~/Fahad-190127:/var/www/localhost/htdocs --name Fahad-190127 -p 8008:80 sebp/lighttpd
+
+Q5) docker container ls
+
+Q6 and Q7) docker container stop Fahad-190127
+
+Q8) docker-compose up
